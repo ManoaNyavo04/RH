@@ -18,7 +18,7 @@ class Cv extends CI_Controller {
 		// $this->load->view("cv/test",$liste);
 	}
 
-	public function checkcv() {
+	public function checkcv($sessionService) {
 		$this->load->model('Bdd');
 		
 		$nom = $this->input->get('nom');
@@ -36,7 +36,7 @@ class Cv extends CI_Controller {
 		$exp = $this->input->get('exp');
 		
 			$candidat_data = array();
-			$candidat_data['idservice'] = 1;
+			$candidat_data['idservice'] = $sessionService;
 			$candidat_data['nom'] = $nom;
 			$candidat_data['prenom'] = $prenom;
 			$candidat_data['dtn'] = $date;

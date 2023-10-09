@@ -101,7 +101,7 @@
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
                       <label for="date-input1">Date de naissance</label>
-                      <div class="input-group">
+                      <div class="input-group">]
                         <input type="text" class="form-control drgpicker" id="date-input1" value="04/24/2020" aria-describedby="button-addon2" name="date">
                         <div class="input-group-append">
                           <div class="input-group-text" id="button-addon-date"><span class="fe fe-calendar fe-16 mx-2"></span></div>
